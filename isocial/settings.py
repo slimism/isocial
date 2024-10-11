@@ -27,8 +27,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
-    # 'cart',
-    # 'payment',
+    'cart',
+    'payment',
     'whitenoise.runserver_nostatic'
 ]
 
