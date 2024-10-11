@@ -13,8 +13,8 @@ SECRET_KEY = 'django-insecure-=f)$dd=e(0y3rojs&lj$i#1m5h3wyj=y)_k^)ric2ml8gzfsvu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-CSRF_TRUSTED_ORIGINS = []
+ALLOWED_HOSTS = ['isocial-production.up.railway.app', 'https://isocial-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['isocial-production.up.railway.app', 'https://isocial-production.up.railway.app']
 
 
 # Application definition
