@@ -363,7 +363,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  /* background: url("../assets/background.mp4") top center; */
+  /* background: url("../assets/background.330925e3f701.mp4") top center; */
   background-size: cover;
   position: relative;
 }
@@ -636,52 +636,52 @@ section {
   opacity: 0.8; /* Adjust the opacity value as needed */
 }
 .services .web-design:hover::before {
-  background-image: url("../assets/webdesign.png"); 
+  background-image: url("../assets/webdesign.d92c7743e53f.png"); 
   background-size: cover;
   background-position: center;
 }
 .services .sm-manage:hover::before {
-  background-image: url("../assets/sm-manage.png"); 
+  background-image: url("../assets/sm-manage.928a292c1961.png"); 
   background-size: cover;
   background-position: center;
 }
 .services .c-create:hover::before {
-  background-image: url("../assets/c-create.png"); 
+  background-image: url("../assets/c-create.7cb434d0617a.png"); 
   background-size: cover;
   background-position: center;
 }
 .services .seo:hover::before {
-  background-image: url("../assets/seo.png"); 
+  background-image: url("../assets/seo.4be8ddc04333.png"); 
   background-size: cover;
   background-position: center;
 }
 
 .services .ppc:hover::before {
-  background-image: url("../assets/ppc.png"); 
+  background-image: url("../assets/ppc.7f01a4c5c5a5.png"); 
   background-size: cover;
   background-position: center;
 }
 
 .services .branding:hover::before {
-  background-image: url("../assets/branding.png"); 
+  background-image: url("../assets/branding.2b4eeada23f2.png"); 
   background-size: cover;
   background-position: center;
 }
 
 .services .graphicdesign:hover::before {
-  background-image: url("../assets/graphicdesign.png"); 
+  background-image: url("../assets/graphicdesign.f97bbee39e74.png"); 
   background-size: cover;
   background-position: center;
 }
 
 .services .in-marketing:hover::before {
-  background-image: url("../assets/influencermarketing.png"); 
+  background-image: url("../assets/influencermarketing.e6928c2f4452.png"); 
   background-size: cover;
   background-position: center;
 }
 
 .services .google-ads:hover::before {
-  background-image: url("../assets/googleads.png"); 
+  background-image: url("../assets/googleads.d849475d8453.png"); 
   background-size: cover;
   background-position: center;
 }
@@ -789,7 +789,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../assets/slider-bg-2.png") center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../assets/slider-bg-2.ffb427ece6e8.png") center center;
   background-size: cover;
   padding: 60px 0;
 }
