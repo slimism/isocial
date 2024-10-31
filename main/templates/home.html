@@ -28,14 +28,16 @@
         </div>
 
         <div class="row content">
-          <div class="col-lg-6">
+          <div class="col-lg-6 d-flex align-items-center">
+            <div>
             <p>
               We are a dynamic team of creative minds, strategists, and digital enthusiasts who thrive on transforming ideas into impactful digital experiences. Our journey began with a vision to revolutionize the digital landscape, and today, we stand tall as pioneers in crafting compelling narratives that resonate with audiences worldwide.
             </p>
             <a href="#" class="btn-learn-more">Learn More</a>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <img src="{% static 'assets/aboutus.png' %}" class="img-fluid partner-img" alt="aboutus">
+        </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 d-flex justify-content-center ">
+            <img src="{% static 'assets/aboutus.png' %}" class="img-fluid partner-img aboutus-img" alt="aboutus">
           </div>
         </div>
 
@@ -52,12 +54,15 @@
               <p>We take pride in representing our valued clients with integrity and dedication</p>
             </div>
             <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-12 partner-img-container">  
-                <img src="{% static 'assets/dentoface.png' %}" class="img-fluid partner-img" alt="Dentoface">   
+              <div class="col-lg-4 col-md-4 col-sm-12 partner-img-container">  
+                <img src="{% static 'assets/baherlogo.png' %}" class="img-fluid partner-img" alt="baherlogo">   
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 partner-img-container">  
-                <img src="{% static 'assets/paraqia.png' %}" class="img-fluid partner-img" alt="Paraqia">
-              </div>          
+              <div class="col-lg-4 col-md-4 col-sm-12 partner-img-container">  
+                <img src="{% static 'assets/furnbeirutlogo.png' %}" class="img-fluid partner-img" alt="furnbeirutlogo">
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 partner-img-container">  
+                <img src="{% static 'assets/dentoface.png' %}" class="img-fluid partner-img" alt="dentoface">
+              </div>           
             </div>
             </div>
     
@@ -67,46 +72,158 @@
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
-
         <div class="section-title">
-          <!-- <h2>Services</h2> -->
           <h3>We do offer awesome <span>Services</span></h3>
           <p>Empowering individuals and businesses to enhance their online presence and engagement through comprehensive Social Management Services</p>
         </div>
+    
+        <!-- Carousel Version for Larger Screens -->
+        <div id="servicesCarousel" class="carousel carousel-dark slide d-none d-lg-block" data-bs-interval="false">
+          <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box sm-manage">
+                    <h4 class="title"><a href="">Social Media Management</a></h4>
+                    <p class="description">The most brilliant team will help you empower your online presence</p>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box c-create">
+                    <h4 class="title"><a href="">Content Creation</a></h4>
+                    <p class="description">Innovative team dedicated to inspire your audience</p>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box seo">
+                    <h4 class="title"><a href="">Search Engine Optimization</a></h4>
+                    <p class="description">Analyst aimed to boost your recognition</p>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box web-design">
+                    <h4 class="title"><a href="">Web Development and Design</a></h4>
+                    <p class="description">Superheroes that bring ideas to reality</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Second Slide -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box ppc">
+                    <h4 class="title"><a href="">Pay Per Click</a></h4>
+                    <p class="description">PPC Strategies That Drive Clicks and Conversions</p>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box branding">
+                    <h4 class="title"><a href="">Branding</a></h4>
+                    <p class="description">Amplifying Your Brand Through Genuine Connections</p>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box graphicdesign">
+                    <h4 class="title"><a href="">Graphic Design</a></h4>
+                    <p class="description">Designs That Captivate and Inspire</p>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box in-marketing">
+                    <h4 class="title"><a href="">Influencer Marketing</a></h4>
+                    <p class="description">Connecting Brands with Authentic Voices</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box sm-manage">
-              <h4 class="title"><a href="">Social Media Management</a></h4>
-              <p class="description">The most brilliant team will help you empwer your online presence </p>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box google-ads">
+                    <h4 class="title"><a href="">Google Ads</a></h4>
+                    <p class="description">Maximizing Your Reach with Targeted Precision</p>
+                  </div>
+                </div>
+            
+              </div>
             </div>
           </div>
-
-          <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box c-create">
-              <h4 class="title"><a href="">Content Creation</a></h4>
-              <p class="description">Innovative team dedicated to inspire your audience</p>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box seo">
-              <h4 class="title"><a href="">Search Engine Optimization</a></h4>
-              <p class="description">Analyst aimed to boost your recognition</p>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box web-design">
-              <h4 class="title"><a href="">Web Development and Design</a></h4>
-              <p class="description">Superheroes that bring ideas to reality</p>
-            </div>
-          </div>
-
+    
+          <!-- Carousel Controls -->
+          <a class="carousel-control-prev" href="#servicesCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#servicesCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
         </div>
-
+    
+        <!-- Non-Carousel Version for Mobile -->
+        <div class="d-block d-lg-none">
+          <div class="row">
+            <div class="col-12 d-flex align-items-stretch mb-4">
+              <div class="icon-box sm-manage">
+                <h4 class="title"><a href="">Social Media Management</a></h4>
+                <p class="description">The most brilliant team will help you empower your online presence</p>
+              </div>
+            </div>
+            <div class="col-12 d-flex align-items-stretch mb-4">
+              <div class="icon-box c-create">
+                <h4 class="title"><a href="">Content Creation</a></h4>
+                <p class="description">Innovative team dedicated to inspire your audience</p>
+              </div>
+            </div>
+            <div class="col-12 d-flex align-items-stretch mb-4">
+              <div class="icon-box seo">
+                <h4 class="title"><a href="">Search Engine Optimization</a></h4>
+                <p class="description">Analyst aimed to boost your recognition</p>
+              </div>
+            </div>
+            <div class="col-12 d-flex align-items-stretch mb-4">
+              <div class="icon-box web-design">
+                <h4 class="title"><a href="">Web Development and Design</a></h4>
+                <p class="description">Superheroes that bring ideas to reality</p>
+              </div>
+            </div>
+            <div class="col-12 d-flex align-items-stretch mb-4">
+              <div class="icon-box sm-manage">
+                <h4 class="title"><a href="">Graphic Design</a></h4>
+                <p class="description">Creative designs that capture attention</p>
+              </div>
+            </div>
+            <div class="col-12 d-flex align-items-stretch mb-4">
+              <div class="icon-box c-create">
+                <h4 class="title"><a href="">Email Marketing</a></h4>
+                <p class="description">Effective campaigns to boost engagement</p>
+              </div>
+            </div>
+            <div class="col-12 d-flex align-items-stretch mb-4">
+              <div class="icon-box seo">
+                <h4 class="title"><a href="">Brand Strategy</a></h4>
+                <p class="description">Strong branding for better visibility</p>
+              </div>
+            </div>
+            <div class="col-12 d-flex align-items-stretch mb-4">
+              <div class="icon-box web-design">
+                <h4 class="title"><a href="">App Development</a></h4>
+                <p class="description">Functional and user-friendly mobile apps</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section><!-- End Services Section -->
+    </section>
+    
+    
+    <!-- End Services Section -->
 
 
     <!-- ======= Cta Section ======= -->
@@ -116,127 +233,16 @@
         <div class="text-center">
           <h3>Call To Action</h3>
           <p>Unlock the potential within you and turn your dreams into tangible achievements! Join us on this journey, and together, let's transform aspirations into reality</p>
-          <a class="cta-btn" href="#contact">Call To Action</a>
+          <a class="cta-btn" href="{% url 'contact' %}">Call To Action</a>
         </div>
 
       </div>
     </section><!-- End Cta Section -->
 
-
- 
-    <!-- ======= Pricing Section ======= -->
-    <!-- <section id="pricing" class="pricing">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Pricing</h2>
-          <h3>Our Competing <span>Prices</span></h3>
-          <p>Discover our competitive pricing plans tailored to meet your social media marketing needs and budget.</p>
-        </div>
-
-        <div class="row">
-          {% for product in products %}
-          <div class="col-lg-4 col-md-6">
-            <div class="box">
-              <h3>{{ product.name }}</h3>
-              <h4><sup>AED</sup>{{ product.price }}<span> / month</span></h4>
-              {% if product.description %}
-              <ul>
-                {% for item in product.description %}
-                  {% if item.visible %}
-                <li>{{ item.description }}</li>
-                {% else %}
-                <li class="na">{{ item.description }}</li>
-                {% endif %}
-                  {% endfor %}
-              </ul>
-              {% endif %}
-              <div class="btn-wrap">
-                <button type="button" value="{{ product.id }}" class="btn-buy" id="add-cart">Buy Now</button>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-     
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Pricing Section -->
-
-    <!-- ======= F.A.Q Section ======= -->
-    <section id="faq" class="faq">
-      <div class="container">
-
-        <div class="section-title">
-          <!-- <h2>F.A.Q</h2> -->
-          <h3>Frequently Asked <span>Questions</span></h3>
-        </div>
-
-        <ul class="faq-list">
-
-          <li>
-            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">What services does your social media agency offer? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                We offer a wide range of services including social media management, content creation, community engagement, social media advertising, influencer marketing, analytics and reporting, and more.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">How can your agency help my business grow on social media? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Our agency employs strategic planning, creative content creation, targeted advertising campaigns, and engagement tactics to increase your brand's visibility, audience engagement, and ultimately drive conversions and growth on social media platforms.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">How do you determine the best social media strategy for my business? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                We conduct a thorough analysis of your business goals, target audience, industry trends, and competitors to tailor a customized social media strategy that aligns with your objectives and maximizes your ROI.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Can you handle social media platforms other than Facebook and Instagram? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Yes, we specialize in managing various social media platforms including but not limited to Facebook, Instagram, Twitter, LinkedIn, Pinterest, YouTube, TikTok, and more. We tailor our strategies to each platform to ensure optimal results.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">What sets your agency apart from others in the industry? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Our agency is driven by a team of experienced social media experts who stay updated with the latest trends, algorithms, and best practices in the industry. We prioritize creativity, transparency, and client satisfaction, delivering personalized solutions that yield tangible results.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question"> How do I get started with your agency? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Getting started with our agency is simple! Just reach out to us through our website or contact information provided, and we'll schedule a consultation to discuss your business needs, goals, and how we can help you achieve success on social media.
-              </p>
-            </div>
-          </li>
-
-        </ul>
-
-      </div>
-    </section><!-- End F.A.Q Section -->
+    
 
     <!-- ======= Testimonial Section ======= -->
-    <section id="faq" class="faq">
+    <section id="services" class="services" data-bs-ride="carousel">
       <div class="container">
 
         <div class="section-title">
@@ -244,128 +250,41 @@
           <h3>What do they say <span>About Us</span></h3>
         </div>
 
-        <div class="container">
-          <div class="row g-5 py-4">
-            <div class="col-lg-6 d-flex align-items-start">
-              <img alt="" class="img-fluid rounded-circle me-3" height="96" src="https://freefrontend.dev/assets/square-small.png" width="96">
-              <div class="px-3 px-md-2">
-                <div class="text-primary mb-1">
-                  <svg class="bi bi-quote" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"></path></svg>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur eli Lorem ipsum dolor sit amet consectetur eli Lorem ipsum dolor sit amet consectetur eliLorem ipsum dolor sit amet consectetu reli</p>
-                <div class="text-start pt-2">
-                  <h5 class="fw-bold">John Doe</h5>
-                  <div class="text-muted">
-                    Graphic Designer
-                  </div>
-                </div>
-              </div>
+        <div id="testimonialCarousel" class="carousel carousel-testimonial carousel-dark slide" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-inner">
+            <div class="item carousel-item carousel-testimonial-item active">
+              <div class="img-box"><img src="https://i.ibb.co/d5DY64w/img1.jpg" alt=""></div>
+              <p class="testimonial">Fast, reliable, and incredibly professional. They helped us meet tight deadlines without compromising on quality. Truly outstanding service!</p>
+              <p class="overview"><b>Jennifer Smith</b>, Office Worker</p>
             </div>
-            <div class="col-lg-6 d-flex align-items-start">
-              <img alt="" class="img-fluid rounded-circle me-3" height="96" src="https://freefrontend.dev/assets/square-small.png" width="96">
-              <div class="px-3 px-md-2">
-                <div class="text-primary mb-1">
-                  <svg class="bi bi-quote" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"></path></svg>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur eli Lorem ipsum dolor sit amet consectetur eli Lorem ipsum dolor sit amet consectetur eliLorem ipsum dolor sit amet consectetu reli</p>
-                <div class="text-start pt-2">
-                  <h5 class="fw-bold">John Doe</h5>
-                  <div class="text-muted">
-                    HR Manager
-                  </div>
-                </div>
-              </div>
+            <div class="item carousel-item carousel-testimonial-item">
+              <div class="img-box"><img src="https://i.ibb.co/5FF1vqz/img2.jpg" alt=""></div>
+              <p class="testimonial">We’ve been collaborating with this company for over three years. Their consistency and high standards are unmatched. They are more than just a provider; they’re a trusted partner</p>
+              <p class="overview"><b>Dauglas McNun</b>, Financial Advisor</p>
             </div>
           </div>
+    
+          <!-- Carousel Controls -->
+          <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
         </div>
-
-
-
       </div>
   </section>
-    <!-- ======= Testimonial Section ======= -->
 
 
-    <!-- ======= Contact Section ======= -->
-    <!-- <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <h3>Contact <span>Us</span></h3>
-          <p>Drop us a inquiry, we will reach out and make greatness together.</p>
-        </div>
-
-        <div>
-          
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d903.0765889378386!2d55.20290356968343!3d25.125331512820882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b564dc9e5af%3A0x93e7151516d48a26!2sAsmawi%20Office%20Building!5e0!3m2!1sen!2sde!4v1709321334175!5m2!1sen!2sde" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <div class="row mt-5">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Office No. 117, Al Asmawi Building, Ground Floor - Sheikh Zayed Rd - Umm Al Sheif - Dubai - United Arab Emirates</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@isocial24.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+971 4 3943919</p>
-              </div>
-
-       
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
 
   </main><!-- End #main -->
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  
+
   <script>
     // Check if button is pressed 
     $(document).on('click', '.btn-buy', function(e){

@@ -8,12 +8,12 @@ body {
 }
 
 a {
-  color: #e43c5c;
+  color: #55bdff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ea6981;
+  color: #519eced8;
   text-decoration: none;
 }
 
@@ -599,6 +599,8 @@ section {
 }
 
 .services .icon-box {
+  width: 291px;
+  height: 240px;
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
@@ -634,25 +636,56 @@ section {
   opacity: 0.8; /* Adjust the opacity value as needed */
 }
 .services .web-design:hover::before {
-  background-image: url("../assets/webdesign.jpeg"); 
+  background-image: url("../assets/webdesign.png"); 
   background-size: cover;
   background-position: center;
 }
 .services .sm-manage:hover::before {
-  background-image: url("../assets/sm-manage.jpeg"); 
+  background-image: url("../assets/sm-manage.png"); 
   background-size: cover;
   background-position: center;
 }
 .services .c-create:hover::before {
-  background-image: url("../assets/c-create.jpeg"); 
+  background-image: url("../assets/c-create.png"); 
   background-size: cover;
   background-position: center;
 }
 .services .seo:hover::before {
-  background-image: url("../assets/seo.jpeg"); 
+  background-image: url("../assets/seo.png"); 
   background-size: cover;
   background-position: center;
 }
+
+.services .ppc:hover::before {
+  background-image: url("../assets/ppc.png"); 
+  background-size: cover;
+  background-position: center;
+}
+
+.services .branding:hover::before {
+  background-image: url("../assets/branding.png"); 
+  background-size: cover;
+  background-position: center;
+}
+
+.services .graphicdesign:hover::before {
+  background-image: url("../assets/graphicdesign.png"); 
+  background-size: cover;
+  background-position: center;
+}
+
+.services .in-marketing:hover::before {
+  background-image: url("../assets/influencermarketing.png"); 
+  background-size: cover;
+  background-position: center;
+}
+
+.services .google-ads:hover::before {
+  background-image: url("../assets/googleads.png"); 
+  background-size: cover;
+  background-position: center;
+}
+
 
 .services .icon {
   margin-bottom: 15px;
@@ -684,7 +717,7 @@ section {
 .services .icon-box:hover .title a,
 .services .icon-box:hover .description {
   color: #f9f9f9;
-  background-color: rgba(4, 34, 76, 0.5); /* Set the background color to yellow */
+  background-color: rgba(85, 189, 255, 0.5); /* Set the background color to yellow */
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); /* Add a shadow effect */
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Add a shadow effect to the text */
 }
@@ -696,6 +729,23 @@ section {
 .services .icon-box:hover .icon i {
   color: #fff;
 }
+
+.carousel-inner{
+  padding: 30px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto; /* Adjust as needed */
+  transform: translateX(-100px); /* Move the left controller further left */
+}
+
+.carousel-control-next {
+  transform: translateX(100px); /* Move the right controller further right */
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Features
@@ -945,17 +995,50 @@ section {
 }
 .partner-img {
   display: inline-block;
+  margin: 30px 30px; 
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.partner-img:hover {
+  filter: grayscale(0%);
+}
+
+/* .partner-img {
+  display: inline-block;
+  margin: 30px 30px; 
+  filter: grayscale(100%) brightness(0.8) sepia(1) hue-rotate(180deg) saturate(300%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.partner-img:hover {
+  filter: none;
+} */
+
+
+
+
+
+.partner-img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-img {
+  display: inline-block;
+  max-width: 60%; /* or any other percentage or pixel value */
+  height: auto;
   margin: 30px 30px; /* Adjust the margin as needed */
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
-}
-.partner-img-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /*--------------------------------------------------------------
@@ -1078,7 +1161,7 @@ section {
 # F.A.Q
 --------------------------------------------------------------*/
 .faq {
-  padding: 60px 0;
+  padding: 10px 0;
 }
 
 .faq .faq-list {
@@ -1922,6 +2005,274 @@ section {
   font-size: 14px;
 }
 
+/*--------------------------------------------------------------
+# Blog Details Section
+--------------------------------------------------------------*/
+.blog-details {
+  padding-bottom: 30px;
+}
+.blog-details .article {
+  background-color: rgba(255, 255, 255, 1); /* Equivalent of --surface-color */
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Slight shadow with 10% opacity */
+}
+
+.blog-details .post-img {
+  margin: -30px -30px 20px -30px;
+  overflow: hidden;
+}
+
+.blog-details .title {
+  color: rgba(73, 60, 62, 1); /* Equivalent of --heading-color */
+  font-size: 28px;
+  font-weight: 700;
+  padding: 0;
+  margin: 30px 0;
+}
+
+
+.blog-details .content {
+  margin-top: 20px;
+}
+
+.blog-details .content h3 {
+  font-size: 22px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.blog-details .content blockquote {
+  overflow: hidden;
+  background-color: rgba(68, 68, 68, 0.05); /* Light gray with 95% transparency */
+  padding: 60px;
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.blog-details .content blockquote p {
+  color: rgba(68, 68, 68, 1); /* Equivalent of --default-color */
+  line-height: 1.6;
+  margin-bottom: 0;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.blog-details .content blockquote:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: rgba(85, 189, 255, 1); /* Equivalent of --accent-color */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-details .meta-top {
+  margin-top: 20px;
+  color: rgba(68, 68, 68, 0.4); /* Equivalent of --default-color with 40% transparency */
+}
+
+.blog-details .meta-top ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-details .meta-top ul li+li {
+  padding-left: 20px;
+}
+
+.blog-details .meta-top i {
+  font-size: 16px;
+  margin-right: 8px;
+  line-height: 0;
+  color: rgba(68, 68, 68, 0.4); /* Equivalent of --default-color with 40% transparency */
+}
+
+.blog-details .meta-top a {
+  color: rgba(68, 68, 68, 0.4); /* Equivalent of --default-color with 40% transparency */
+  font-size: 14px;
+  display: inline-block;
+  line-height: 1;
+}
+
+.blog-details .meta-bottom {
+  padding-top: 10px;
+  border-top: 1px solid rgba(68, 68, 68, 0.1); /* Equivalent of --default-color with 90% transparency */
+}
+
+.blog-details .meta-bottom i {
+  color: rgba(68, 68, 68, 0.4); /* Equivalent of --default-color with 40% transparency */
+  display: inline;
+}
+
+.blog-details .meta-bottom a {
+  color: rgba(68, 68, 68, 0.4); /* Equivalent of --default-color with 40% transparency */
+  transition: 0.3s;
+}
+
+.blog-details .meta-bottom a:hover {
+  color: rgba(85, 189, 255, 1); /* Equivalent of --accent-color */
+}
+
+.blog-details .meta-bottom .cats {
+  list-style: none;
+  display: inline;
+  padding: 0 20px 0 0;
+  font-size: 14px;
+}
+
+.blog-details .meta-bottom .cats li {
+  display: inline-block;
+}
+
+.blog-details .meta-bottom .tags {
+  list-style: none;
+  display: inline;
+  padding: 0;
+  font-size: 14px;
+}
+
+.blog-details .meta-bottom .tags li {
+  display: inline-block;
+}
+
+.blog-details .meta-bottom .tags li+li::before {
+  padding-right: 6px;
+  color: rgba(68, 68, 68, 1); /* Equivalent of --default-color */
+  content: ",";
+}
+
+.blog-details .meta-bottom .share {
+  font-size: 16px;
+}
+
+.blog-details .meta-bottom .share i {
+  padding-left: 5px;
+}
+
+.service-details ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.service-details ul li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.service-details ul i {
+  font-size: 20px;
+  margin-right: 8px;
+  color:  rgba(68, 68, 68, 1);;
+}
+
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widgets-container {
+  margin: 60px 0 30px 0;
+}
+
+.widget-title {
+  color: rgba(73, 60, 62, 1); /* Equivalent of --heading-color */
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 0 0 10px;
+  margin: 0 0 20px 0;
+  border-left: 4px solid rgba(85, 189, 255, 1); /* Equivalent of --accent-color */
+}
+
+.widget-item {
+  margin-bottom: 30px;
+  background-color: rgba(255, 255, 255, 1); /* Equivalent of --surface-color */
+  border: 1px solid rgba(128, 128, 128, 0.1); /* Light gray with 10% opacity */
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.widget-item:last-child {
+  margin-bottom: 0;
+}
+
+.blog-author-widget img {
+  max-width: 160px;
+}
+
+.blog-author-widget h4 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 15px 0 0 0;
+  padding: 0;
+  color: rgba(68, 68, 68, 0.9); /* Equivalent of --default-color with 20% opacity */
+}
+
+.blog-author-widget .social-links {
+  margin: 5px 0;
+}
+
+.blog-author-widget .social-links a {
+  color: rgba(68, 68, 68, 0.6); /* Equivalent of --default-color with 60% opacity */
+  margin: 0 3px;
+  font-size: 18px;
+}
+
+.blog-author-widget .social-links a:hover {
+  color: rgba(85, 189, 255, 1); /* Equivalent of --accent-color */
+}
+
+.blog-author-widget p {
+  font-style: italic;
+  color: rgba(68, 68, 68, 0.8); /* Equivalent of --default-color with 30% opacity */
+  margin: 10px 0 0 0;
+}
+
+.tags-widget ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tags-widget ul li {
+  display: inline-block;
+}
+
+.tags-widget ul a {
+  background-color: rgba(68, 68, 68, 0.06); /* Equivalent of --default-color with 94% transparency */
+  color: rgba(68, 68, 68, 0.7); /* Equivalent of --default-color with 30% opacity */
+  border-radius: 50px;
+  font-size: 14px;
+  padding: 5px 15px;
+  margin: 0 6px 8px 0;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.tags-widget ul a:hover {
+  background: rgba(85, 189, 255, 1); /* Equivalent of --accent-color */
+  color: rgba(255, 255, 255, 1); /* Equivalent of --contrast-color */
+}
+
+.tags-widget ul a span {
+  padding-left: 5px;
+  color: rgba(68, 68, 68, 0.6); /* Equivalent of --default-color with 60% opacity */
+  font-size: 14px;
+}
+/*--------------------------------------------------------------
+# End of Services
+--------------------------------------------------------------*/
+
+
 
 .img-account-profile {
     height: 10rem;
@@ -2272,4 +2623,77 @@ section {
   background: #04224c;
   color: #fff;
   text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+
+.carousel-testimonial {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel-testimonial-item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+.carousel-testimonial .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel-testimonial .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel-testimonial .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel-testimonial .overview {	
+	font-style: italic;
+}
+.carousel-testimonial .overview b {
+	text-transform: uppercase;
+	color: #55bdff;
+}
+.carousel-testimonial .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
 }

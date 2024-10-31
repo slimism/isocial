@@ -2,6 +2,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm, SetPasswordForm
 from django import forms
 from .models import Profile
+from django_recaptcha.fields import ReCaptchaField
 
 class UserInfoForm(forms.ModelForm):
 	phone = forms.CharField(label="", widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Phone'}), required=False)
@@ -85,3 +86,39 @@ class ChangePasswordForm(SetPasswordForm):
 		self.fields['new_password2'].help_text = '<span class="form-text text-muted"><small>Enter the same password as before, for verification.</small></span>'
 
 
+class ContactForm(forms.Form):
+    name = forms.CharField(
+        max_length=100,
+        widget=forms.TextInput(attrs={
+            'class': 'form-control',
+            'id': 'name',
+            'placeholder': 'Your Name',
+            'required': 'required'
+        })
+    )
+    email = forms.EmailField(
+        widget=forms.EmailInput(attrs={
+            'class': 'form-control',
+            'id': 'email',
+            'placeholder': 'Your Email',
+            'required': 'required'
+        })
+    )
+    subject = forms.CharField(
+        max_length=100,
+        widget=forms.TextInput(attrs={
+            'class': 'form-control',
+            'id': 'subject',
+            'placeholder': 'Subject',
+            'required': 'required'
+        })
+    )
+    message = forms.CharField(
+        widget=forms.Textarea(attrs={
+            'class': 'form-control',
+            'rows': 5,
+            'placeholder': 'Message',
+            'required': 'required'
+        })
+    )
+    captcha = ReCaptchaField()  # This is correct!

@@ -4,7 +4,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
-from .forms import SignUpForm, UpdateUserForm, ChangePasswordForm, UserInfoForm
+from .forms import SignUpForm, UpdateUserForm, ChangePasswordForm, UserInfoForm, ContactForm
 from payment.forms import ShippingForm
 from payment.models import ShippingAddress
 from django import forms
@@ -146,5 +146,30 @@ def update_info(request):
         messages.success(request, "Please login to update the user.")
         return redirect('home')
 
-
+def faq(request):
+    return render (request, "faq.html", {})
     
+def contact_view(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            subject = form.cleaned_data['subject']
+            message = form.cleaned_data['message']
+
+            # Send the email
+            send_mail(
+                subject,
+                f"Message from {name} ({email}):\n\n{message}",
+                email,
+                ['mysleeem@gmail.com'],  # Replace with your email address
+                fail_silently=False,
+            )
+
+            messages.success(request, 'Your message has been sent. Thank you!')
+            return redirect('home')
+    else:
+        form = ContactForm()
+
+    return render(request, 'contact.html', {'form': form})
