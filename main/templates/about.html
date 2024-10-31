@@ -1,27 +1,54 @@
+
+
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 
+<div id="product_slide" class="product_slide" style="background: #55bdff;">
+    <br/><br/><br/><br/><br/><br/>
+</div>
+<main id="main">
 
- <!-- Header-->
- <header class="bg-dark py-5">
-    <div class="container px-4 px-lg-5 my-5">
-        <div class="text-center text-white">
-            <h1 class="display-4 fw-bolder">ABOUT US</h1>
-            <p class="lead fw-normal text-white-50 mb-0">Know us</p>
-        </div>
-    </div>
-</header>
+    <!-- ======= Breadcrumbs ======= -->
 
-<div class="container">
-    <div class="row">
-        <center>
-            <div class="col-8">
-                <p align="justify">
-                    <br/><br/>
-                    Welcome to iSocial24, your premier partner in navigating the dynamic world of social media. Founded in 2023, iSocial24 is a forward-thinking agency dedicated to helping businesses and brands thrive in the digital landscape.
-                    <br/><br/>
-                    At iSocial24, we understand that in today's interconnected world, a strong social media presence is essential for success. That's why we specialize in crafting tailored strategies and innovative solutions to elevate your brand's online presence, engage your audience effectively, and drive meaningful results.
-                    <br/><br/>
+
+<main class="main">
+
+    <div class="container">
+      <div class="row">
+
+       
+        <div class="col-lg-8">
+
+            <!-- Blog Details Section -->
+            <section id="blog-details" class="blog-details section">
+              <div class="container">
+  
+                <article class="article">
+  
+                  <div class="post-img">
+                    <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                  </div>
+  
+                  <h2 class="title"> Social Media Strategy and Content Creation</h2>
+  
+                  <div class="content">
+                    <p>
+                        Welcome to iSocial24, your premier partner in navigating the dynamic world of social media. Founded in 2023, iSocial24 is a forward-thinking agency dedicated to helping businesses and brands thrive in the digital landscape.
+
+                    </p>
+  
+                   
+  
+                    <blockquote>
+                      <p>
+                          Empowering Your Brand, All Your Need In One Place.
+                      </p>
+                    </blockquote>
+  
+                    <p>
+                        At iSocial24, we understand that in today's interconnected world, a strong social media presence is essential for success. That's why we specialize in crafting tailored strategies and innovative solutions to elevate your brand's online presence, engage your audience effectively, and drive meaningful results.
+                        <br/><br/>
                     Our team consists of passionate experts who are at the forefront of social media trends and technologies. With a diverse range of skills and backgrounds, we bring fresh perspectives and creative ideas to every project we undertake.
                     <br/><br/>
                     Whether you're a startup looking to establish your brand, a small business aiming to expand your reach, or a corporation seeking to enhance your online reputation, iSocial24 is here to guide you every step of the way. From strategic planning and content creation to community management and analytics, we offer comprehensive services designed to meet your unique needs and goals.
@@ -29,11 +56,107 @@
                     What sets iSocial24 apart is our commitment to delivering exceptional results and providing unparalleled customer service. We prioritize transparency, communication, and collaboration, ensuring that our clients are always informed and involved in the process.
                     <br/><br/>
                     Partner with iSocial24 today and unlock the full potential of your social media presence. Let us help you tell your story, connect with your audience, and achieve lasting success in the digital age
-</p></div>
-        </center>
+                    </p>
+                    <img src="assets/img/blog/blog-inside-post.jpg" class="img-fluid" alt="">
+  
+                    <h3>Service Summary</h3>
+  
+                    <div id="service-details" class="service-details">
+                    <ul>
+                      <li><i class="bi bi-check-circle"></i> <span>Custom strategy and daily management for consistent engagement and growth</span></li>
+                      <li><i class="bi bi-check-circle"></i> <span>High-quality, brand-aligned multimedia content for audience engagement</span></li>
+                      <li><i class="bi bi-check-circle"></i> <span>Comprehensive SEO strategy for improved visibility and rankings</span></li>
+                      <li><i class="bi bi-check-circle"></i> <span>Responsive, user-friendly websites that reflect your brand identity</span></li>
+                      <li><i class="bi bi-check-circle"></i> <span>Strong brand identity development for consistent communication</span></li>
+                      <li><i class="bi bi-check-circle"></i> <span>Strategic campaigns for optimal ROI and conversion tracking</span></li>
+                      <li><i class="bi bi-check-circle"></i> <span>Custom, high-quality visuals tailored to your brand’s aesthetic</span></li>
+                      <li><i class="bi bi-check-circle"></i> <span>Strategic partnerships to amplify reach and authenticity</span></li>
+                      <li><i class="bi bi-check-circle"></i> <span>Customized campaigns with continuous monitoring for maximum effectiveness</span></li>
+                    </ul>
+                  </div>
+  
+                  </div><!-- End post content -->
+  
+                  <div class="meta-bottom">
+                    <i class="bi bi-folder"></i>
+                    <ul class="cats">
+                      <li>Business</li>
+                    </ul>
+  
+                    <i class="bi bi-tags"></i>
+                    <ul class="tags">
+                      <li>Creative</li>
+                      <li>Tips</li>
+                      <li>Marketing</li>
+                      <li>Management</li>
+                      <li>Social Media</li>
+                    </ul>
+                  </div><!-- End meta bottom -->
+  
+                </article>
+  
+              </div>
+            </section><!-- /Blog Details Section -->
+  
+            
+  
+            
+  
+          </div>
 
+        <div class="col-lg-4 sidebar">
+
+          <div class="widgets-container">
+
+            <!-- Blog Author Widget -->
+            <!-- <div class="blog-author-widget widget-item">
+
+              <div class="d-flex flex-column align-items-center">
+                <img src="assets/img/blog/blog-author.jpg" class="rounded-circle flex-shrink-0" alt="">
+                <h4>Jane Smith</h4>
+                <div class="social-links">
+                  <a href="https://x.com/#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://facebook.com/#"><i class="bi bi-facebook"></i></a>
+                  <a href="https://instagram.com/#"><i class="biu bi-instagram"></i></a>
+                  <a href="https://instagram.com/#"><i class="biu bi-linkedin"></i></a>
+                </div>
+
+                <p>
+                  Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium. Quas repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.
+                </p>
+
+              </div> -->
+
+
+            
+
+            
+
+            <!-- Tags Widget -->
+            <div class="tags-widget widget-item">
+
+              <h3 class="widget-title">Tags</h3>
+              <ul>
+                <li><a href="#">Social Media Management</a></li>
+                <li><a href="#">Content Creation</a></li>
+                <li><a href="#">SEO</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">PPC</a></li>
+                <li><a href="#">Branding</a></li>
+                <li><a href="#">Graphic Design</a></li>
+                <li><a href="#">Influencer Marketing</a></li>
+                <li><a href="#">Google Ads</a></li>
+              </ul>
+
+            </div><!--/Tags Widget -->
+
+          </div>
+
+        </div>
+
+      </div>
     </div>
-</div>
 
+  </main>
 
-{% endblock %}
+  {% endblock %}
