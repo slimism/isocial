@@ -82,18 +82,18 @@
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
-  let selectHeader = select('#header')
-  if (selectHeader) {
-    const headerScrolled = () => {
-      if (window.scrollY > 100) {
-        selectHeader.classList.add('header-scrolled')
-      } else {
-        selectHeader.classList.remove('header-scrolled')
-      }
-    }
-    window.addEventListener('load', headerScrolled)
-    onscroll(document, headerScrolled)
-  }
+  // let selectHeader = select('#header')
+  // if (selectHeader) {
+  //   const headerScrolled = () => {
+  //     if (window.scrollY > 100) {
+  //       selectHeader.classList.add('header-scrolled')
+  //     } else {
+  //       selectHeader.classList.remove('header-scrolled')
+  //     }
+  //   }
+  //   window.addEventListener('load', headerScrolled)
+  //   onscroll(document, headerScrolled)
+  // }
 
   /**
    * Back to top button
@@ -116,13 +116,31 @@
    */
   on('click', '.mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
+  
+    // Toggle SVG paths or use appropriate logic for icons
+    const iconPaths = this.querySelectorAll('path');
+    iconPaths.forEach(path => path.classList.toggle('dropdown-active')); // Example logic
   })
+  
 
   /**
    * Mobile nav dropdowns activate
    */
+  let open = document.querySelector('.navbar--icon');
+  let menu = document.querySelector('.nav--open');
+  let close = document.querySelector('.nav--open-icon');
+  
+  open.addEventListener('click', function() {
+    menu.classList.toggle('close');
+  });
+  
+  
+  close.addEventListener('click', function() {
+    menu.classList.toggle('close');
+  })
+
+
+
   on('click', '.navbar .dropdown > a', function(e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()

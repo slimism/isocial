@@ -5,3 +5,13 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+
+document.querySelectorAll('.service-item').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      item.classList.add('is-flipped');
+    });
+  
+    item.addEventListener('mouseleave', () => {
+      item.classList.remove('is-flipped');
+    });
+  });

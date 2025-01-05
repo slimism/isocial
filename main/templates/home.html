@@ -4,7 +4,7 @@
   <!-- ======= Header ======= -->
   <section id="hero">
     <div class="hero-container">
-      <video autoplay muted id="video-bg">
+      <video autoplay muted loop id="video-bg">
         <source src="{% static 'assets/background.mp4' %}" type="video/mp4">
       </video>
       <div class="hero-container">
@@ -17,42 +17,306 @@
   </section>
 
   <main id="main">
-    <!-- ======= About Section ======= -->
+    <!-- ======= Vision Section ======= -->
     <section id="about" class="about">
       <div class="container">
-
-        <div class="section-title">
-          <!-- <h2>About</h2> -->
-          <h3>Learn More <span>About Us</span></h3>
-          <p>Your Social Media Storytellers</p>
-        </div>
-
         <div class="row content">
           <div class="col-lg-6 d-flex align-items-center">
             <div>
-            <p>
-              We are a dynamic team of creative minds, strategists, and digital enthusiasts who thrive on transforming ideas into impactful digital experiences. Our journey began with a vision to revolutionize the digital landscape, and today, we stand tall as pioneers in crafting compelling narratives that resonate with audiences worldwide.
-            </p>
-            <a href="{% url 'about' %}" class="btn-learn-more">Learn More</a>
+              <div class="section-title-1">
+                <!-- <h2>About</h2> -->
+                <h1>Shaping </br> <span>Meaningful </br> Connections</span></h1> 
+              </div>
+              <a href="{% url 'contact' %}#contact" class="btn-learn-more">Ping us!</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center">
+            <div>
+              <div class="section-title-1 section-title-summary">
+                <p>Our mission is to provide customers with unrivaled digital marketing solutions that rocket them to the top of their respective sectors.</br>
+                  We want to increase brand recognition, engage target audiences, and create enduring connections via strategic insights, creative genius, and unrelenting devotion. We are dedicated to continually exceeding expectations and remaking the digital marketing environment by staying ahead of market trends and adopting revolutionary technologies.</p>
+              </div>
+            </div>
           </div>
         </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 d-flex justify-content-center ">
-            <img src="{% static 'assets/aboutus.png' %}" class="img-fluid partner-img aboutus-img" alt="aboutus">
+      </div>
+    </section><!-- End Vision Section -->
+
+
+
+
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div>
+        <div class="row">
+
+          <div class="col-lg-4 col-md-4 col-sm-12 service-item-parent">
+            <div class="service-item">
+              <div class="service-item-front">
+                <video autoplay muted loop id="video-bg">
+                  <source src="{% static 'assets/ser-1.mp4' %}" type="video/mp4">
+                </video>
+                <div class="overlay"></div> <!-- Overlay Layer -->
+                <div class="service-title">
+                  <h1>Social Media Management</h1>
+                </div>
+              </div>
+              <div class="service-item-back service-item-back-bg-1">
+                <p>Maximizing your brand’s impact through strategic social media management. </br>
+                We create and execute tailored content strategies that drive engagement, growth, and meaningful connections with your audience.</p>
+              </div>
+            </div>
           </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 service-item-parent">
+            <div class="service-item">
+              <div class="service-item-front">
+                <video autoplay muted loop id="video-bg">
+                  <source src="{% static 'assets/ser-2.mp4' %}" type="video/mp4">
+                </video>
+                <div class="overlay"></div> <!-- Overlay Layer -->
+                <div class="service-title">
+                  <h1>Content Creation</h1>
+                </div>
+              </div>
+              <div class="service-item-back service-item-back-bg-1">
+                <p>Producing compelling content that captures attention and tells your brand's story.</br>
+                  We create diverse, high-quality visuals and copy that engage, inspire, and drive meaningful interactions across platforms.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 service-item-parent">
+            <div class="service-item">
+              <div class="service-item-front">
+                <video autoplay muted loop id="video-bg">
+                  <source src="{% static 'assets/ser-3.mp4' %}" type="video/mp4">
+                </video>
+                <div class="overlay"></div> <!-- Overlay Layer -->
+                <div class="service-title">
+                  <h1>Search Engine Optimization</h1>
+                </div>
+              </div>
+              <div class="service-item-back service-item-back-bg-1">
+                <p>Boosting your online visibility with data-driven SEO strategies.</br>
+                  We optimize your website to rank higher in search results, driving organic traffic and long-term growth for your business.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 service-item-parent">
+            <div class="service-item">
+              <div class="service-item-front">
+                <video autoplay muted loop id="video-bg">
+                  <source src="{% static 'assets/ser-4.mp4' %}" type="video/mp4">
+                </video>
+                <div class="overlay"></div> <!-- Overlay Layer -->
+                <div class="service-title">
+                  <h1>Web Development and Design</h1>
+                </div>
+              </div>
+              <div class="service-item-back service-item-back-bg-1">
+                <p>Creating stunning, user-friendly websites that captivate and convert.</br>
+                  We blend design, functionality, and performance to build digital experiences that elevate your brand and drive results.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 service-item-parent">
+            <div class="service-item">
+              <div class="service-item-front">
+                <video autoplay muted loop id="video-bg">
+                  <source src="{% static 'assets/ser-5.mp4' %}" type="video/mp4">
+                </video>
+                <div class="overlay"></div> <!-- Overlay Layer -->
+                <div class="service-title">
+                  <h1>Branding</h1>
+                </div>
+              </div>
+              <div class="service-item-back service-item-back-bg-1">
+                <p>Crafting unique brand identities that resonate and differentiate in a competitive landscape.</br>
+                  We help businesses build authentic visual and verbal narratives that connect with their target audience.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 service-item-parent">
+            <div class="service-item">
+              <div class="service-item-front">
+                <video autoplay muted loop id="video-bg">
+                  <source src="{% static 'assets/ser-6.mp4' %}" type="video/mp4">
+                </video>
+                <div class="overlay"></div> <!-- Overlay Layer -->
+                <div class="service-title">
+                  <h1>Pay Per Click</h1>
+                </div>
+              </div>
+              <div class="service-item-back service-item-back-bg-1">
+                <p>Driving targeted traffic and immediate results with precision-based PPC campaigns.</br>
+                  We optimize ad spend to maximize conversions and deliver measurable ROI for your business.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 service-item-parent">
+            <div class="service-item">
+              <div class="service-item-front">
+                <video autoplay muted loop id="video-bg">
+                  <source src="{% static 'assets/ser-7.mp4' %}" type="video/mp4">
+                </video>
+                <div class="overlay"></div> <!-- Overlay Layer -->
+                <div class="service-title">
+                  <h1>Graphic Design</h1>
+                </div>
+              </div>
+              <div class="service-item-back service-item-back-bg-1">
+                <p>Designing visually striking graphics that communicate your brand's essence.</br>
+                  We create custom visuals that captivate, inspire, and enhance your brand’s identity across all platforms.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 service-item-parent">
+            <div class="service-item">
+              <div class="service-item-front">
+                <video autoplay muted loop id="video-bg">
+                  <source src="{% static 'assets/ser-8.mp4' %}" type="video/mp4">
+                </video>
+                <div class="overlay"></div> <!-- Overlay Layer -->
+                <div class="service-title">
+                  <h1>Influencer Marketing</h1>
+                </div>
+              </div>
+              <div class="service-item-back service-item-back-bg-1">
+                <p>Leveraging authentic partnerships through strategic influencer marketing.</br>
+                  We connect your brand with influential voices to amplify reach, build trust, and drive engagement with your target audience.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 service-item-parent">
+            <div class="service-item">
+              <div class="service-item-front">
+                <video autoplay muted loop id="video-bg">
+                  <source src="{% static 'assets/ser-9.mp4' %}" type="video/mp4">
+                </video>
+                <div class="overlay"></div> <!-- Overlay Layer -->
+                <div class="service-title">
+                  <h1>Google Ads</h1>
+                </div>
+              </div>
+              <div class="service-item-back service-item-back-bg-1">
+                <p>Delivering high-performing Google Ads campaigns that drive instant visibility and targeted traffic.</br>
+                  We optimize every aspect, from keyword selection to ad copy, ensuring maximum ROI and measurable business growth.</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        
+      </div>
+    </section>
+    
+    
+    <!-- End Services Section -->
+
+    <!-- ======= About US Section ======= -->
+    <section id="about-us" class="about-us">
+      <div class="container">
+        <div class="row content">
+
+          <div class="col-lg-6 d-flex align-items-center">
+            <div>
+              <div class="section-title-1 section-title-summary">
+                <p>At iSocial24, we understand that each business has unique needs and goals. We don’t take a one-size-fits-all approach to digital marketing.</br>
+                  Instead, we create custom strategies that are tailored to each client’s individual needs.</p>
+                  <a href="{% url 'contact' %}#contact" class="btn-learn-more">JOIN US!</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center">
+            <div>
+              <div class="section-title-1">
+                <h1>Passionate. </br> <span>Creative. </br> Innovative.</span></h1> 
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="team-img">
+          <img src="{% static 'assets/group.png' %}" alt="Team Member">
+        </div>
+      </div>
+    </section><!-- End About US Section -->
+
+
+
+
+    <!-- <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="text-center">
+          <h3>Call To Action</h3>
+          <p>Unlock the potential within you and turn your dreams into tangible achievements! Join us on this journey, and together, let's transform aspirations into reality</p>
+          <a class="cta-btn" href="{% url 'contact' %}">Call To Action</a>
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section> -->
+
+    <section class="has-section-divider" data-theme="dark">
+      <div class="padding-y-xxl">
+        <div class="container max-width-adaptive-sm">
+          <div class="text-component">
+            <p></br>
+            </br></p>
+          </div>
+        </div>
+      </div>
+      <svg class="section-divider" viewBox="0 0 1920 60" aria-hidden="true"><path data-theme="softSecondary" fill="var(--color-bg)" d="M0,80.75H1920V45.833H1742.083a80.491,80.491,0,0,1,12.863-1.55c5.2-.26,17.24-.3,24.153-.24,26.69.222,54.377,1.094,79.341.96,19.287-.1,37.1-.372,53.573-.788L1920,44V34.078l-6.614.216-9.221.256c-6.252.147-12.7.249-19.265.32-13.132.14-26.739.15-40.206.125-26.935-.052-53.313-.247-74.22.168-14.367-1.4-32.582-.756-48.293-1.92-10.145.509-20.876.936-24.149,2.4-16.09-.266-37.611,2.532-50.019.479V34.684c-10.959-2.291-33.371-1.869-48.292-3.84-15.861-.512-26.214,1.347-39.671,1.92-7.032.178-5.941-.773-13.8-.481-40.751-.071-41.131,5.477-62.087,8.16-4.569-5.691-47.085-5.126-77.622-5.04-2.333-4.154-22.643-5.808-50.015-6.479-4.677-2.069-17.763-2.969-22.423-5.04-4.7-.175-3.474.477-6.9.479-11.485-2.964-40.092-2.449-63.813-3.36-23.312.6-29.4,3.589-55.195,3.841-8.3-3.783-56.5-4.561-84.513-3.361-.316-1.857-5.682-3.862-20.7-4.8-2.193-.137-6.78.122-10.352,0-16.331-.564-22.974-3.145-39.671-1.441-22.812-1.938-73.831-3.919-98.311-.719-4.315-2.2-15.369-3.462-20.7-5.521-23.122-.714-41.26-2.815-65.54-2.64-13.5,1-29.918,1.6-39.671,3.12.27,1.317-1.305,2.38-6.9,2.88-35.562-1.333-83.117-2.545-93.139,2.88-14.338-.314-8.341,2.2-22.423,1.92-5.17-.16-2.615-1.4-6.9-1.68-36.327-1.894-80.653-1.762-100.041,2.161-12.433-1.631-21.648-3.708-36.221-5.04-13.359.1-36.33-.325-48.293-1.2-32.483.6-42.463,4.331-53.471,7.92-25.227-.147-43.752,2.274-58.641,4.321-11.966-1.189-27.56-.426-39.67-1.441-19.514,1.284-40.772,2.328-53.468,4.561C301.584,31.04,294,33.888,283.7,37.8c-15.047-.774-19.865-3.5-36.221-4.321-10.453-.522-37.12-1.01-48.3-.959-10.184.046-17.188,1.062-27.595.719-18.244,2.022-31.516,4.736-46.57,7.2-3.726,2.091-9.8,3.854-17.5,5.39H4.061c-.734-1.281-1.512-2.592-2.344-3.949-.546-.09-1.13-.175-1.717-.26Z"/></svg>
+    </section>
+    
+
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="row content">
+
+          <div class="col-lg-6 d-flex align-items-center">
+            <div>
+              <div class="section-title-1">
+                <h1>Partners </br> <span>Friends </br> Clients</span></h1> 
+              </div>
+              
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 d-flex align-items-center">
+            <div>
+              <div class="section-title-1 section-title-summary">
+                <p>At iSocial24, we take pride in building meaningful partnerships with our clients. </br>
+                  The success of our clients is at the heart of everything we do, and our tailored approach ensures we help them achieve their unique goals.</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
 
         <!-- ======= Portfolio Section ======= -->
         <section id="portfolio" class="portfolio">
           <div class="container">
-    
-            <div class="section-title">
-              <!-- <h2>Clients</h2> -->
-              <h3>We're proud of our <span>Clients</span></h3>
-              <p>We take pride in representing our valued clients with integrity and dedication</p>
-            </div>
             <div class="row">
               <div class="col-lg-4 col-md-4 col-sm-12 partner-img-container">  
                 <img src="{% static 'assets/baherlogo.png' %}" class="img-fluid partner-img" alt="baherrestlogo">   
@@ -68,185 +332,13 @@
     
           </div>
         </section><!-- End Portfolio Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-        <div class="section-title">
-          <h3>We do offer awesome <span>Services</span></h3>
-          <p>Empowering individuals and businesses to enhance their online presence and engagement through comprehensive Social Management Services</p>
-        </div>
-    
-        <!-- Carousel Version for Larger Screens -->
-        <div id="servicesCarousel" class="carousel carousel-dark slide d-none d-lg-block" data-bs-interval="false">
-          <div class="carousel-inner">
-            <!-- First Slide -->
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                  <div class="icon-box sm-manage">
-                    <h4 class="title"><a href="">Social Media Management</a></h4>
-                    <p class="description">The most brilliant team will help you empower your online presence</p>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                  <div class="icon-box c-create">
-                    <h4 class="title"><a href="">Content Creation</a></h4>
-                    <p class="description">Innovative team dedicated to inspire your audience</p>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                  <div class="icon-box seo">
-                    <h4 class="title"><a href="">Search Engine Optimization</a></h4>
-                    <p class="description">Analyst aimed to boost your recognition</p>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                  <div class="icon-box web-design">
-                    <h4 class="title"><a href="">Web Development and Design</a></h4>
-                    <p class="description">Superheroes that bring ideas to reality</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <!-- Second Slide -->
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                  <div class="icon-box ppc">
-                    <h4 class="title"><a href="">Pay Per Click</a></h4>
-                    <p class="description">PPC Strategies That Drive Clicks and Conversions</p>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                  <div class="icon-box branding">
-                    <h4 class="title"><a href="">Branding</a></h4>
-                    <p class="description">Amplifying Your Brand Through Genuine Connections</p>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                  <div class="icon-box graphicdesign">
-                    <h4 class="title"><a href="">Graphic Design</a></h4>
-                    <p class="description">Designs That Captivate and Inspire</p>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                  <div class="icon-box in-marketing">
-                    <h4 class="title"><a href="">Influencer Marketing</a></h4>
-                    <p class="description">Connecting Brands with Authentic Voices</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <!-- Slide 3 -->
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                  <div class="icon-box google-ads">
-                    <h4 class="title"><a href="">Google Ads</a></h4>
-                    <p class="description">Maximizing Your Reach with Targeted Precision</p>
-                  </div>
-                </div>
-            
-              </div>
-            </div>
-          </div>
-    
-          <!-- Carousel Controls -->
-          <a class="carousel-control-prev" href="#servicesCarousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#servicesCarousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
-        </div>
-    
-        <!-- Non-Carousel Version for Mobile -->
-        <div class="d-block d-lg-none">
-          <div class="row">
-            <div class="col-12 d-flex align-items-stretch mb-4 d-flex justify-content-center">
-              <div class="icon-box sm-manage">
-                <h4 class="title"><a href="">Social Media Management</a></h4>
-                <p class="description">The most brilliant team will help you empower your online presence</p>
-              </div>
-            </div>
-            <div class="col-12 d-flex align-items-stretch mb-4 d-flex justify-content-center">
-              <div class="icon-box c-create">
-                <h4 class="title"><a href="">Content Creation</a></h4>
-                <p class="description">Innovative team dedicated to inspire your audience</p>
-              </div>
-            </div>
-            <div class="col-12 d-flex align-items-stretch mb-4 d-flex justify-content-center">
-              <div class="icon-box seo">
-                <h4 class="title"><a href="">Search Engine Optimization</a></h4>
-                <p class="description">Analyst aimed to boost your recognition</p>
-              </div>
-            </div>
-            <div class="col-12 d-flex align-items-stretch mb-4 d-flex justify-content-center">
-              <div class="icon-box web-design">
-                <h4 class="title"><a href="">Web Development and Design</a></h4>
-                <p class="description">Superheroes that bring ideas to reality</p>
-              </div>
-            </div>
-            <div class="col-12 d-flex align-items-stretch mb-4 d-flex justify-content-center">
-              <div class="icon-box ppc">
-                <h4 class="title"><a href="">Pay Per Click</a></h4>
-                <p class="description">PPC Strategies That Drive Clicks and Conversions</p>
-              </div>
-            </div>
-            <div class="col-12 d-flex align-items-stretch mb-4 d-flex justify-content-center">
-              <div class="icon-box branding">
-                <h4 class="title"><a href="">Branding</a></h4>
-                <p class="description">Amplifying Your Brand Through Genuine Connections</p>
-              </div>
-            </div>
-            <div class="col-12 d-flex align-items-stretch mb-4 d-flex justify-content-center">
-              <div class="icon-box graphicdesign">
-                <h4 class="title"><a href="">Graphic Design</a></h4>
-                <p class="description">Designs That Captivate and Inspire</p>
-              </div>
-            </div>
-            <div class="col-12 d-flex align-items-stretch mb-4 d-flex justify-content-center">
-              <div class="icon-box in-marketing">
-                <h4 class="title"><a href="">Influencer Marketing</a></h4>
-                <p class="description">Connecting Brands with Authentic Voices</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-    <!-- End Services Section -->
-
-
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container">
-
-        <div class="text-center">
-          <h3>Call To Action</h3>
-          <p>Unlock the potential within you and turn your dreams into tangible achievements! Join us on this journey, and together, let's transform aspirations into reality</p>
-          <a class="cta-btn" href="{% url 'contact' %}">Call To Action</a>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
-
     
 
     <!-- ======= Testimonial Section ======= -->
-    <section id="services" class="services" data-bs-ride="carousel">
+    <!-- <section id="services" class="services" data-bs-ride="carousel">
       <div class="container">
 
         <div class="section-title">
-          <!-- <h2>F.A.Q</h2> -->
           <h3>What do they say <span>About Us</span></h3>
         </div>
 
@@ -264,7 +356,6 @@
             </div>
           </div>
     
-          <!-- Carousel Controls -->
           <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -275,7 +366,7 @@
           </a>
         </div>
       </div>
-  </section>
+  </section> -->
 
 
 
