@@ -356,13 +356,75 @@ section {
 .section-title-summary p {
   color: #04224c;
   font-size: 18px;
+  padding-top:30px;
 }
 
-@media (min-width: 1024px) {
-  .section-title p {
-    width: 50%;
+.centered-container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 768px) { /* Adjust the max-width value based on your needs */
+  .service-title {
+    text-align: center;
+  }
+
+  .service-title h1 {
+    font-size: 20px; /* Reduce font size for smaller screens */
+    margin: 0 auto; /* Center the title */
+    padding: 5px 10px; /* Optional: Adjust padding for better appearance */
+  }
+
+  .service-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Ensure everything aligns vertically */
   }
 }
+
+
+@media (max-width: 1024px) { /* Target screens up to 14-inch laptops */
+  .service-title {
+    text-align: center; /* Center-align the title */
+  }
+
+  .service-title h1 {
+    font-size: 24px; /* Slightly reduce font size */
+    margin: 0 auto; /* Center the title horizontally */
+    padding: 10px 15px; /* Adjust padding for better spacing */
+  }
+
+  .service-item {
+    display: flex;
+    align-items: center; /* Vertically align content */
+    justify-content: center; /* Horizontally align content */
+    flex-direction: column; /* Stack items vertically */
+  }
+}
+
+@media (max-width: 1800px) { /* Target screens up to 14-inch laptops */
+  .service-title {
+    text-align: center; /* Center-align the title */
+  }
+
+  .service-title h1 {
+    font-size: 30px; /* Slightly reduce font size */
+    margin: 0 auto; /* Center the title horizontally */
+    padding: 10px 15px; /* Adjust padding for better spacing */
+  }
+
+  .service-item {
+    display: flex;
+    align-items: center; /* Vertically align content */
+    justify-content: center; /* Horizontally align content */
+    flex-direction: column; /* Stack items vertically */
+  }
+}
+
 
 /*--------------------------------------------------------------
 # About
@@ -583,166 +645,6 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services {
-  padding-bottom: 30px;
-}
-
-@media (max-width: 767px) {
-  .icon-box {
-    width: 100%;
-  }
-}
-
-.services .icon-box {
-  width: 291px;
-  height: 240px;
-  padding: 60px 30px;
-  position: relative;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
-  transition: all 0.3s ease-in-out;
-  border-radius: 8px;
-  z-index: 1;
-  text-align: center;
- 
-}
-
-.services .icon-box::before {
-  content: "";
-  position: absolute;
-  background: #fdeff2;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 100%;
-  transition: all 0.4s;
-  z-index: -1;
-}
-
-.services .icon-box:hover::before {
-  background: #BCC1D8;
-  top: 0;
-  border-radius: 0px;
-}
-.services .icon-box:hover::before {
-  top: 0;
-  border-radius: 0px;
-  opacity: 0.8; /* Adjust the opacity value as needed */
-}
-.services .web-design:hover::before {
-  background-image: url("../assets/webdesign.png"); 
-  background-size: cover;
-  background-position: center;
-}
-.services .sm-manage:hover::before {
-  background-image: url("../assets/sm-manage.png"); 
-  background-size: cover;
-  background-position: center;
-}
-.services .c-create:hover::before {
-  background-image: url("../assets/c-create.png"); 
-  background-size: cover;
-  background-position: center;
-}
-.services .seo:hover::before {
-  background-image: url("../assets/seo.png"); 
-  background-size: cover;
-  background-position: center;
-}
-
-.services .ppc:hover::before {
-  background-image: url("../assets/ppc.png"); 
-  background-size: cover;
-  background-position: center;
-}
-
-.services .branding:hover::before {
-  background-image: url("../assets/branding.png"); 
-  background-size: cover;
-  background-position: center;
-}
-
-.services .graphicdesign:hover::before {
-  background-image: url("../assets/graphicdesign.png"); 
-  background-size: cover;
-  background-position: center;
-}
-
-.services .in-marketing:hover::before {
-  background-image: url("../assets/influencermarketing.png"); 
-  background-size: cover;
-  background-position: center;
-}
-
-.services .google-ads:hover::before {
-  background-image: url("../assets/googleads.png"); 
-  background-size: cover;
-  background-position: center;
-}
-
-
-.services .icon {
-  margin-bottom: 15px;
-}
-
-.services .icon i {
-  font-size: 48px;
-  line-height: 1;
-  color: #BCC1D8;
-  transition: all 0.3s ease-in-out;
-}
-
-.services .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .title a {
-  color: #111;
-}
-
-.services .description {
-  font-size: 15px;
-  line-height: 28px;
-  margin-bottom: 0;
-}
-
-.services .icon-box:hover .title a,
-.services .icon-box:hover .description {
-  color: #f9f9f9;
-  background-color: rgba(85, 189, 255, 0.5); /* Set the background color to yellow */
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); /* Add a shadow effect */
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Add a shadow effect to the text */
-}
-
-/* .services .icon-box:hover .description{
-  display:none;
-} */
-
-.services .icon-box:hover .icon i {
-  color: #fff;
-}
-
-.carousel-inner{
-  padding: 30px;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: auto; /* Adjust as needed */
-  transform: translateX(-100px); /* Move the left controller further left */
-}
-
-.carousel-control-next {
-  transform: translateX(100px); /* Move the right controller further right */
-}
-
-/*--------------------------------------------------------------
-# Service Item Rotate
---------------------------------------------------------------*/
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -773,12 +675,13 @@ section {
   align-items: center;
   justify-content: center;
   color: white;
+  font-weight: bold; /* Makes the text bold */
   font-size: 24px;
 }
 
 .service-item-back {
-  background:#BCC1D8;
-  color: #04224c;
+  background:#087eff;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -799,7 +702,7 @@ section {
 }
 
 .service-title h1{
-  background-color: #087EFF;
+  font-weight: 777;
 }
 
 .overlay {
@@ -813,14 +716,13 @@ section {
   pointer-events: none; /* Ensures the overlay doesn't interfere with video interaction */
 }
 
-.service-item-back-bg-1 {
-  background-image: url('../assets/isociallogo.png'); /* Replace with the actual image path */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-position: bottom right; /* Centers the image horizontally and vertically */
-  background-size: 20%; /* Sets the image size to approximately 20% of its original size */
-  position: relative; /* Allows for further styling if needed */
- 
-}
+/* .service-item-back-bg-1 {
+  background-image: url('../assets/isociallogo.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 20%; 
+  position: relative; 
+} */
 
 
 
@@ -2487,6 +2389,10 @@ section {
   font-weight: 600;
 }
 
+.cart-summary-total p {
+ padding-top: 30px;
+}
+
 .card{
   --bs-card-border-color:none;
 } 
@@ -2548,10 +2454,19 @@ section {
 #footer {
   color: #444444;
   font-size: 14px;
-  background: #f6f4f4;
+  /* background: #f6f4f4; */
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-
 }
+
+.footer-top {
+  background-image: url('../assets/lights2.jpeg');
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding: 60px 0; /* Adds padding for spacing */
+}
+
+
+
 
 .img-footer{
   width:200px;
@@ -2561,7 +2476,7 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  /* background: #fff; */
 }
 
 #footer .footer-top .footer-contact {

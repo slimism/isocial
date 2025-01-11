@@ -42,12 +42,6 @@
         </div>
       </div>
     </section><!-- End Vision Section -->
-
-
-
-
-
-
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
         <div>
@@ -243,7 +237,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 d-flex align-items-center">
+          <div class="col-lg-6 d-flex align-items-center centered-container">
             <div>
               <div class="section-title-1">
                 <h1>Passionate. </br> <span>Creative. </br> Innovative.</span></h1> 
@@ -258,20 +252,6 @@
       </div>
     </section><!-- End About US Section -->
 
-
-
-
-    <!-- <section id="cta" class="cta">
-      <div class="container">
-
-        <div class="text-center">
-          <h3>Call To Action</h3>
-          <p>Unlock the potential within you and turn your dreams into tangible achievements! Join us on this journey, and together, let's transform aspirations into reality</p>
-          <a class="cta-btn" href="{% url 'contact' %}">Call To Action</a>
-        </div>
-
-      </div>
-    </section> -->
 
     <section class="has-section-divider" data-theme="dark">
       <div class="padding-y-xxl">
@@ -333,71 +313,10 @@
           </div>
         </section><!-- End Portfolio Section -->
     
-
-    <!-- ======= Testimonial Section ======= -->
-    <!-- <section id="services" class="services" data-bs-ride="carousel">
-      <div class="container">
-
-        <div class="section-title">
-          <h3>What do they say <span>About Us</span></h3>
-        </div>
-
-        <div id="testimonialCarousel" class="carousel carousel-testimonial carousel-dark slide" data-bs-ride="carousel" data-bs-interval="5000">
-          <div class="carousel-inner">
-            <div class="item carousel-item carousel-testimonial-item active">
-              <div class="img-box"><img src="https://i.ibb.co/d5DY64w/img1.jpg" alt=""></div>
-              <p class="testimonial">Fast, reliable, and incredibly professional. They helped us meet tight deadlines without compromising on quality. Truly outstanding service!</p>
-              <p class="overview"><b>Jennifer Smith</b>, Office Worker</p>
-            </div>
-            <div class="item carousel-item carousel-testimonial-item">
-              <div class="img-box"><img src="https://i.ibb.co/5FF1vqz/img2.jpg" alt=""></div>
-              <p class="testimonial">We’ve been collaborating with this company for over three years. Their consistency and high standards are unmatched. They are more than just a provider; they’re a trusted partner</p>
-              <p class="overview"><b>Dauglas McNun</b>, Financial Advisor</p>
-            </div>
-          </div>
-    
-          <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
-        </div>
-      </div>
-  </section> -->
-
-
-
   </main><!-- End #main -->
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
   
-
-  <script>
-    // Check if button is pressed 
-    $(document).on('click', '.btn-buy', function(e){
-      e.preventDefault();
-      var product_id = $(this).val();
-      $.ajax({
-        type: 'POST',
-        url: "{% url 'cart_add' %}",
-        data:{
-          product_id: product_id,
-          csrfmiddlewaretoken: '{{ csrf_token }}',
-          action: 'post'
-        },
-        success: function(json){
-          // console.log(json.qty);
-          document.getElementById("cart_quantity").textContent = json.qty;
-          
-        },
-        error: function(xhr, errmsg, err){
-        }
-      });
-    })
-  </script>
         
 {% endblock %}
