@@ -803,6 +803,44 @@ section {
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../assets/funkywrapbg.jpg") center center;
 }
 
+.cta-shwarmanji{
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../assets/shawarmajibg.jpg") center center;
+  background-size: cover;
+  padding: 60px 0;
+  margin-top:100px;
+}
+
+
+.cta-shwarmanji h3 {
+  color: #04224c;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.cta-shwarmanji p {
+  color: #fff;
+}
+
+.cta-shwarmanji .cta-btn {
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.cta-shwarmanji .cta-btn:hover {
+  background: #087EFF;
+  border: 2px solid #087EFF;
+}
+
 .portfolio-page{
   margin-top: 20px;
 }
