@@ -254,7 +254,7 @@
 
 
 <!-- Portfolio Section -->
-<section id="portfolio" class="portfolio section">
+<!-- <section id="portfolio" class="portfolio section">
 
   <div class="container">
     <div class="row content">
@@ -286,7 +286,7 @@
         <li data-filter="*" class="filter-active">All</li>
         <li data-filter=".filter-branding">Branding</li>
         <li data-filter=".filter-socialmedia">Social Media</li>
-        <!-- <li data-filter=".filter-branding">Web</li> -->
+       
       </ul>
 
 
@@ -298,7 +298,7 @@
             <p>Lorem ipsum, dolor sit</p>
             <a href="{% static 'assets/port-1.png' %}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
+        </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
           <img src="{% static 'assets/port-2.png' %}" class="img-fluid" alt="">
@@ -307,7 +307,7 @@
             <p>Lorem ipsum, dolor sit</p>
             <a href="{% static 'assets/port-2.png' %}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
+        </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
           <img src="{% static 'assets/port-3.png' %}" class="img-fluid" alt="">
@@ -316,7 +316,7 @@
             <p>Lorem ipsum, dolor sit</p>
             <a href="{% static 'assets/port-3.png' %}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
+        </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
           <img src="{% static 'assets/port-4.png' %}" class="img-fluid" alt="">
@@ -325,7 +325,7 @@
             <p>Lorem ipsum, dolor sit</p>
             <a href="{% static 'assets/port-4.png' %}" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
+        </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-socialmedia">
           <img src="{% static 'assets/port-5.png' %}" class="img-fluid" alt="">
@@ -334,7 +334,7 @@
             <p>Lorem ipsum, dolor sit</p>
             <a href="{% static 'assets/port-5.png' %}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
+        </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-socialmedia">
           <img src="{% static 'assets/port-6.png' %}" class="img-fluid" alt="">
@@ -343,11 +343,11 @@
             <p>Lorem ipsum, dolor sit</p>
             <a href="{% static 'assets/port-6.png' %}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
-      </div><!-- End Portfolio Container -->
+        </div>
+      </div>
     </div>
   </div>
-</section><!-- /Portfolio Section -->
+</section> -->
 
 
     <section class="has-section-divider" data-theme="dark">
@@ -419,8 +419,10 @@
                 <img src="{% static 'assets/wingsanddrinks.png' %}" class="img-fluid partner-img" alt="wingsanddrinks">
               </div>
               <div class="col-lg-3 col-md-3 col-sm-12 partner-img-container">  
-                <img src="{% static 'assets/funkywraplogo.png' %}" class="img-fluid partner-img" alt="funkywrap">
-              </div>              
+                <a href="{% url 'funkywrap' %}">
+                  <img src="{% static 'assets/funkywraplogo.png' %}" class="img-fluid partner-img" alt="funkywrap">
+                </a>
+              </div>             
             </div>
             </div>
     

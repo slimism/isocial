@@ -17,8 +17,30 @@ def home(request):
     return render (request, 'home.html', {'products': products})
 
 
+def bahrbeirut(request):
+    return render (request, 'bahrbeirut.html', {})
+
+def furndebeirut(request):
+    return render (request, 'furndebeirut.html', {})
+
+def breez(request):
+    return render (request, 'breez.html', {})
+
+def shwarmaji(request):
+    return render (request, 'shwarmaji.html', {})
+
+def deliemali(request):
+    return render (request, 'deliemali.html', {})
+
+def wingsondrinks(request):
+    return render (request, 'wingsondrinks.html', {})
+
+def funkywrap(request):
+    return render (request, 'funkywrap.html', {})
+
 def about(request):
     return render (request, 'about.html', {})
+
 
 def login_user(request):
     if request.method == "POST":
