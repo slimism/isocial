@@ -395,17 +395,21 @@
         <section id="partners" class="partners">
           <div class="container">
             <div class="row">
-              <div class="col-lg-3 col-md-3 col-sm-12 partner-img-container">  
-                <img src="{% static 'assets/baherlogo.png' %}" class="img-fluid partner-img" alt="baherrestlogo">   
+              <div class="col-lg-3 col-md-3 col-sm-12 partner-img-container">
+                <a href="{% url 'bahrbeirut' %}">  
+                <img src="{% static 'assets/baherlogo.png' %}" class="img-fluid partner-img" alt="baherrestlogo">   </a>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12 partner-img-container">
+                <a href="{% url 'furndebeirut' %}">   
+                <img src="{% static 'assets/furnbeirutlogo.png' %}" class="img-fluid partner-img" alt="furndebeirut"></a>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-12 partner-img-container">  
-                <img src="{% static 'assets/furnbeirutlogo.png' %}" class="img-fluid partner-img" alt="furnbeirutlogo">
+                <a href="https://www.dentofaces.com/"> 
+                <img src="{% static 'assets/dentoface.png' %}" class="img-fluid partner-img" alt="dentoface"></a>
               </div>
-              <div class="col-lg-3 col-md-3 col-sm-12 partner-img-container">  
-                <img src="{% static 'assets/dentoface.png' %}" class="img-fluid partner-img" alt="dentoface">
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-12 partner-img-container">  
-                <img src="{% static 'assets/breez.png' %}" class="img-fluid partner-img" alt="breez">
+              <div class="col-lg-3 col-md-3 col-sm-12 partner-img-container">
+                <a href="{% url 'breez' %}">   
+                <img src="{% static 'assets/breez.png' %}" class="img-fluid partner-img" alt="breez"></a>
               </div> 
               </div>
               <div class="row">
@@ -417,8 +421,9 @@
               <div class="col-lg-3 col-md-3 col-sm-12 partner-img-container">  
                 <img src="{% static 'assets/emali-deli.png' %}" class="img-fluid partner-img" alt="emali-deli">
               </div> 
-              <div class="col-lg-3 col-md-3 col-sm-12 partner-img-container">  
-                <img src="{% static 'assets/wingsanddrinks.png' %}" class="img-fluid partner-img" alt="wingsanddrinks">
+              <div class="col-lg-3 col-md-3 col-sm-12 partner-img-container"> 
+                <a href="{% url 'wingsondrinks' %}">  
+                <img src="{% static 'assets/wingsanddrinks.png' %}" class="img-fluid partner-img" alt="wingsanddrinks"></a>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-12 partner-img-container">  
                 <a href="{% url 'funkywrap' %}">

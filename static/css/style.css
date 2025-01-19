@@ -344,6 +344,18 @@ section {
   text-transform: uppercase;
 }
 
+.section-title-2 h1 {
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  line-height: 1;
+  margin: 0;
+  color: #04224c;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
 .section-title h3 span {
   color: #087EFF;
 }
@@ -803,80 +815,72 @@ section {
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../assets/funkywrapbg.jpg") center center;
 }
 
-.cta-shwarmanji{
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../assets/shawarmajibg.jpg") center center;
-  background-size: cover;
-  padding: 60px 0;
-  margin-top:100px;
-}
-
-
-.cta-shwarmanji h3 {
-  color: #04224c;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.cta-shwarmanji p {
-  color: #fff;
-}
-
-.cta-shwarmanji .cta-btn {
-  font-family: "Nunito", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 25px;
-  transition: 0.5s;
-  margin-top: 10px;
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-.cta-shwarmanji .cta-btn:hover {
-  background: #087EFF;
-  border: 2px solid #087EFF;
-}
-
-.portfolio-page{
-  margin-top: 20px;
-}
-
-.portfolio-img {
-  width: 100%; /* Ensures responsiveness */
-  max-width: 350px; /* Set a maximum width for all images */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: contain; /* Ensures the image fits within the defined box without distortion */
-  margin: 0 auto; /* Center images inside their container */
-}
-
-.carousel-inner {
-  height: 600px; /* Set the desired height */
-}
-
-.carousel-item img {
-  height: 100%;   /* Make the image fill the carousel height */
-  object-fit: cover; /* Ensures the image scales proportionally and covers the area */
-}
 
 .cta {
-  background-size: cover;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
   padding: 60px 0;
-  height: 350px;
-  margin-top:100px;
+  margin-top: 100px;
+  background-size: cover;
+  background-position: center;
+  z-index: 1; /* Ensures content stays above the overlay */
 }
 
-.centered-image {
-  max-width: 100%;        /* Ensures the image scales responsively */
-  height: auto;           /* Maintains aspect ratio */
+.cta-shwarmanji::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../assets/shawarmajibg.jpg") center center;
+  background-size: cover;
+  opacity: 0.2; /* Set image opacity */
+  z-index: -1; /* Place it behind the content */
+}
+
+.cta-wingsanddrinks::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../assets/wingsanddrinksbg.jpg") center center;
+  background-size: cover;
+  opacity: 0.2; /* Set image opacity */
+  z-index: -1; /* Place it behind the content */
+}
+
+.cta-breez::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../assets/breezbg.jpg") center center;
+  background-size: cover;
+  opacity: 0.2; /* Set image opacity */
+  z-index: -1; /* Place it behind the content */
+}
+
+.cta-funkywrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../assets/funkywrapbg.jpg") center center;
+  background-size: cover;
+  opacity: 0.2; /* Set image opacity */
+  z-index: -1; /* Place it behind the content */
 }
 
 
 .cta h3 {
-  color: #fff;
+  color: #04224c;
   font-size: 28px;
   font-weight: 700;
 }
@@ -904,6 +908,30 @@ section {
   background: #087EFF;
   border: 2px solid #087EFF;
 }
+
+.portfolio-page{
+  margin-top: 20px;
+}
+
+.portfolio-img {
+  width: 100%; /* Ensures responsiveness */
+  max-width: 350px; /* Set a maximum width for all images */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensures the image fits within the defined box without distortion */
+  margin: 0 auto; /* Center images inside their container */
+
+}
+
+.carousel-inner {
+  height: 420px; /* Set the desired height */
+  margin-bottom: 30px;
+}
+
+.carousel-item img {
+  height: 100%;   /* Make the image fill the carousel height */
+  object-fit: cover; /* Ensures the image scales proportionally and covers the area */
+}
+
 @media (max-width: 768px) { /* Applies to devices with width 768px or smaller */
   .carousel-inner {
     height: 100%; /* Set height to 100% for smaller screens like phones */
@@ -913,6 +941,11 @@ section {
 @media (min-width: 1024px) {
   .cta {
     background-attachment: fixed;
+  }
+}
+@media (min-width: 1920px) {
+  .carousel-inner {
+    height: 520px; /* Height for screens wider than 1920px */
   }
 }
 
