@@ -29,8 +29,8 @@ def breez(request):
 def shwarmaji(request):
     return render (request, 'shwarmaji.html', {})
 
-def deliemali(request):
-    return render (request, 'deliemali.html', {})
+def beitemali(request):
+    return render (request, 'beitemali.html', {})
 
 def wingsondrinks(request):
     return render (request, 'wingsondrinks.html', {})

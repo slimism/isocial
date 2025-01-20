@@ -15,7 +15,7 @@ urlpatterns = [
     path('furndebeirut/', views.furndebeirut, name='furndebeirut'),
     path('breez/', views.breez, name='breez'),
     path('shwarmaji/', views.shwarmaji, name='shwarmaji'),
-    path('deliemali/', views.deliemali, name='deliemali'),
+    path('beitemali/', views.beitemali, name='beitemali'),
     path('wingsondrinks/', views.wingsondrinks, name='wingsondrinks'),
     path('funkywrap/', views.funkywrap, name='funkywrap'),
 ]
