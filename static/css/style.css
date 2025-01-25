@@ -743,6 +743,61 @@ section {
   transform: rotateY(0); /* Rotate into view */
 }
 
+.service-title {
+  position: relative; /* Makes this a positioning context */
+}
+
+.sticker {
+  position: absolute; /* Allows precise positioning behind the H1 */
+  top: -60px; /* Adjust to your needs */
+  right: -90px; /* Adjust to your needs */
+  width: 150px;
+  height: 150px;
+  transform: rotate(45deg);
+  z-index: 0; /* Places the sticker behind the H1 */
+}
+
+.sticker img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sticker-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  pointer-events: none;
+  z-index: 1; /* Ensures text appears above the sticker image */
+}
+
+.sticker-text-d {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  font-weight: bold;
+  color: #05224c;
+  text-align: center;
+  text-transform: uppercase;
+  pointer-events: none;
+  z-index: 1; /* Ensures text appears above the sticker image */
+}
+
+.service-title h1 {
+  position: relative; /* Ensures it appears in front of the sticker */
+  z-index: 1; /* Sets the H1 above the sticker */
+}
+
+
+
 .service-title h1{
   font-weight: 777;
 }
@@ -758,16 +813,33 @@ section {
   pointer-events: none; /* Ensures the overlay doesn't interfere with video interaction */
 }
 
-/* .service-item-back-bg-1 {
-  background-image: url('../assets/isociallogo.png');
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 20%; 
-  position: relative; 
-} */
+@media (min-width: 1366px) and (max-width: 1536px) {
+  .sticker {
+    top: -50px; /* Adjusted position for 14-inch screens */
+    right: -80px; /* Adjusted position for 14-inch screens */
+  }
 
+  .sticker-alt{
+    display:none;
+  }
 
+}
 
+@media (max-width: 768px) {
+  .sticker {
+    display:none;
+  }
+}
+
+@media (max-width: 1920px) {
+  .sticker {
+    top: -40px; /* Adjusted position for 14-inch screens */
+    right: -60px; /* Adjusted position for 14-inch screens */
+  }
+  .sticker-alt{
+    display:none;
+  }
+}
 
 
 /*--------------------------------------------------------------
