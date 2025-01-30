@@ -185,7 +185,7 @@ def contact_view(request):
                 subject,
                 f"Message from {name} ({email}):\n\n{message}",
                 email,
-                ['mysleeem@gmail.com'],  # Replace with your email address
+                ['bussiness@isocial24.com'],  # Replace with your email address
                 fail_silently=False,
             )
 

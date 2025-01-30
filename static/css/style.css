@@ -558,6 +558,12 @@ section {
   height: auto; /* Maintains aspect ratio */
 }
 
+.team-img {
+  text-align: center;
+}
+.team-img img {
+  display: inline-block;
+}
 
 
 /* DIVIDER */
