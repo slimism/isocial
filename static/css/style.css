@@ -393,7 +393,6 @@ section {
   .service-title h1 {
     font-size: 20px; /* Reduce font size for smaller screens */
     margin: 0 auto; /* Center the title */
-    padding: 5px 10px; /* Optional: Adjust padding for better appearance */
   }
 
   .service-item {
@@ -413,7 +412,6 @@ section {
   .service-title h1 {
     font-size: 24px; /* Slightly reduce font size */
     margin: 0 auto; /* Center the title horizontally */
-    padding: 10px 15px; /* Adjust padding for better spacing */
   }
 
   .service-item {
@@ -432,7 +430,6 @@ section {
   .service-title h1 {
     font-size: 30px; /* Slightly reduce font size */
     margin: 0 auto; /* Center the title horizontally */
-    padding: 10px 15px; /* Adjust padding for better spacing */
   }
 
   .service-item {
@@ -452,7 +449,6 @@ section {
   .service-title h1 {
     font-size: 38px; /* Increase font size for better visibility */
     margin: 0 auto; /* Center the title horizontally */
-    padding: 20px 30px; /* Increase padding for larger screens */
     line-height: 1.3; /* Ensure better readability with more spacing */
   }
 
@@ -751,17 +747,30 @@ section {
 
 .service-title {
   position: relative; /* Makes this a positioning context */
+  justify-content: center; /* Centers vertically */
+  text-align: center;
+
 }
 
 .sticker {
-  position: absolute; /* Allows precise positioning behind the H1 */
-  top: -60px; /* Adjust to your needs */
-  right: -90px; /* Adjust to your needs */
+  position: absolute;
+  top: -100px; /* Aligns it to the top */
+  right: -120px; /* Aligns it to the right */
+  transform: translate(50%, -50%); /* Moves it outside for a cleaner look */
+  width: 150px; /* Adjust width as needed */
+  height: 200px;
+  transform: rotate(45deg);
+}
+
+/* .sticker {
+  position: absolute;
+  top: -60px; 
+  right: -90px; 
   width: 150px;
   height: 150px;
   transform: rotate(45deg);
-  z-index: 0; /* Places the sticker behind the H1 */
-}
+  z-index: 0; 
+} */
 
 .sticker img {
   width: 100%;
