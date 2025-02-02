@@ -12,6 +12,7 @@ urlpatterns = [
     path('contact/', views.contact_view, name='contact'),
     path('faq/', views.faq, name='faq'),
     path('bahrbeirut/', views.bahrbeirut, name='bahrbeirut'),
+    path('dentoface/', views.dentoface, name='dentoface'),
     path('furndebeirut/', views.furndebeirut, name='furndebeirut'),
     path('breez/', views.breez, name='breez'),
     path('shwarmaji/', views.shwarmaji, name='shwarmaji'),

@@ -38,6 +38,9 @@ def wingsondrinks(request):
 def funkywrap(request):
     return render (request, 'funkywrap.html', {})
 
+def dentoface(request):
+return render (request, 'dentoface.html', {})
+
 def about(request):
     return render (request, 'about.html', {})
 
